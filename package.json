@@ -1,0 +1,23 @@
+{
+  "name": "front_end_test",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": ""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/guimeisang/front_end_test.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/guimeisang/front_end_test/issues"
+  },
+  "homepage": "https://github.com/guimeisang/front_end_test#readme",
+  "dependencies": {
+    "benchmark": "^2.1.4"
+  }
+}
