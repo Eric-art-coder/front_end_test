@@ -1,0 +1,438 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Photo Component should load more photos after triggering PullRefresher.onRefresh 1`] = `
+<div
+  className="container"
+>
+  <NavBar />
+  <SubNavBar
+    activePhotoTypeId={1}
+    onChoose={[Function]}
+    photoTypes={
+      Array [
+        Object {
+          "id": 1,
+          "name": "班级生活",
+        },
+        Object {
+          "id": 2,
+          "name": "班级荣誉",
+        },
+        Object {
+          "id": 3,
+          "name": "班级作品",
+        },
+      ]
+    }
+  />
+  <div
+    className="photo-view"
+  >
+    <DragRefresher
+      onRefresh={[Function]}
+    />
+    <div
+      className="photo-items"
+    >
+      <PhotoItem
+        id={1}
+      />
+      <PhotoItem
+        id={2}
+      />
+      <PhotoItem
+        id={3}
+      />
+      <PhotoItem
+        id={4}
+      />
+      <PhotoItem
+        id={5}
+      />
+      <PhotoItem
+        id={6}
+      />
+      <PhotoItem
+        id={7}
+      />
+      <PhotoItem
+        id={8}
+      />
+      <PhotoItem
+        id={9}
+      />
+      <PhotoItem
+        id={10}
+      />
+    </div>
+    <PullRefresher
+      disabled={false}
+      onRefresh={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Photo Component should load more photos after triggering PullRefresher.onRefresh 2`] = `
+<div
+  className="container"
+>
+  <NavBar />
+  <SubNavBar
+    activePhotoTypeId={1}
+    onChoose={[Function]}
+    photoTypes={
+      Array [
+        Object {
+          "id": 1,
+          "name": "班级生活",
+        },
+        Object {
+          "id": 2,
+          "name": "班级荣誉",
+        },
+        Object {
+          "id": 3,
+          "name": "班级作品",
+        },
+      ]
+    }
+  />
+  <div
+    className="photo-view"
+  >
+    <DragRefresher
+      onRefresh={[Function]}
+    />
+    <div
+      className="photo-items"
+    >
+      <PhotoItem
+        id={1}
+      />
+      <PhotoItem
+        id={2}
+      />
+      <PhotoItem
+        id={3}
+      />
+      <PhotoItem
+        id={4}
+      />
+      <PhotoItem
+        id={5}
+      />
+      <PhotoItem
+        id={6}
+      />
+      <PhotoItem
+        id={7}
+      />
+      <PhotoItem
+        id={8}
+      />
+      <PhotoItem
+        id={9}
+      />
+      <PhotoItem
+        id={10}
+      />
+      <PhotoItem
+        id={11}
+      />
+      <PhotoItem
+        id={12}
+      />
+      <PhotoItem
+        id={13}
+      />
+    </div>
+    <PullRefresher
+      disabled={true}
+      onRefresh={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Photo Component should reacquire photos after changing class 1`] = `
+<div
+  className="container"
+>
+  <NavBar />
+  <SubNavBar
+    activePhotoTypeId={1}
+    onChoose={[Function]}
+    photoTypes={
+      Array [
+        Object {
+          "id": 1,
+          "name": "班级生活",
+        },
+        Object {
+          "id": 2,
+          "name": "班级荣誉",
+        },
+        Object {
+          "id": 3,
+          "name": "班级作品",
+        },
+      ]
+    }
+  />
+  <div
+    className="photo-view"
+  >
+    <DragRefresher
+      onRefresh={[Function]}
+    />
+    <div
+      className="photo-items"
+    />
+    <PullRefresher
+      disabled={true}
+      onRefresh={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Photo Component should reacquire photos after changing class 2`] = `
+<div
+  className="container"
+>
+  <NavBar />
+  <SubNavBar
+    activePhotoTypeId={1}
+    onChoose={[Function]}
+    photoTypes={
+      Array [
+        Object {
+          "id": 1,
+          "name": "班级生活",
+        },
+        Object {
+          "id": 2,
+          "name": "班级荣誉",
+        },
+        Object {
+          "id": 3,
+          "name": "班级作品",
+        },
+      ]
+    }
+  />
+  <div
+    className="photo-view"
+  >
+    <DragRefresher
+      onRefresh={[Function]}
+    />
+    <div
+      className="photo-items"
+    >
+      <PhotoItem
+        id={1}
+      />
+      <PhotoItem
+        id={2}
+      />
+      <PhotoItem
+        id={3}
+      />
+    </div>
+    <PullRefresher
+      disabled={true}
+      onRefresh={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Photo Component should reacquire photos after changing photo type 1`] = `
+<div
+  className="container"
+>
+  <NavBar />
+  <SubNavBar
+    activePhotoTypeId={1}
+    onChoose={[Function]}
+    photoTypes={
+      Array [
+        Object {
+          "id": 1,
+          "name": "班级生活",
+        },
+        Object {
+          "id": 2,
+          "name": "班级荣誉",
+        },
+        Object {
+          "id": 3,
+          "name": "班级作品",
+        },
+      ]
+    }
+  />
+  <div
+    className="photo-view"
+  >
+    <DragRefresher
+      onRefresh={[Function]}
+    />
+    <div
+      className="photo-items"
+    />
+    <PullRefresher
+      disabled={true}
+      onRefresh={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Photo Component should reacquire photos after changing photo type 2`] = `
+<div
+  className="container"
+>
+  <NavBar />
+  <SubNavBar
+    activePhotoTypeId={2}
+    onChoose={[Function]}
+    photoTypes={
+      Array [
+        Object {
+          "id": 1,
+          "name": "班级生活",
+        },
+        Object {
+          "id": 2,
+          "name": "班级荣誉",
+        },
+        Object {
+          "id": 3,
+          "name": "班级作品",
+        },
+      ]
+    }
+  />
+  <div
+    className="photo-view"
+  >
+    <DragRefresher
+      onRefresh={[Function]}
+    />
+    <div
+      className="photo-items"
+    >
+      <PhotoItem
+        id={1}
+      />
+      <PhotoItem
+        id={2}
+      />
+      <PhotoItem
+        id={3}
+      />
+    </div>
+    <PullRefresher
+      disabled={true}
+      onRefresh={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Photo Component should update photos after triggering DragRefresher.onRefresh 1`] = `
+<div
+  className="container"
+>
+  <NavBar />
+  <SubNavBar
+    activePhotoTypeId={1}
+    onChoose={[Function]}
+    photoTypes={
+      Array [
+        Object {
+          "id": 1,
+          "name": "班级生活",
+        },
+        Object {
+          "id": 2,
+          "name": "班级荣誉",
+        },
+        Object {
+          "id": 3,
+          "name": "班级作品",
+        },
+      ]
+    }
+  />
+  <div
+    className="photo-view"
+  >
+    <DragRefresher
+      onRefresh={[Function]}
+    />
+    <div
+      className="photo-items"
+    />
+    <PullRefresher
+      disabled={true}
+      onRefresh={[Function]}
+    />
+  </div>
+</div>
+`;
+
+exports[`Photo Component should update photos after triggering DragRefresher.onRefresh 2`] = `
+<div
+  className="container"
+>
+  <NavBar />
+  <SubNavBar
+    activePhotoTypeId={1}
+    onChoose={[Function]}
+    photoTypes={
+      Array [
+        Object {
+          "id": 1,
+          "name": "班级生活",
+        },
+        Object {
+          "id": 2,
+          "name": "班级荣誉",
+        },
+        Object {
+          "id": 3,
+          "name": "班级作品",
+        },
+      ]
+    }
+  />
+  <div
+    className="photo-view"
+  >
+    <DragRefresher
+      onRefresh={[Function]}
+    />
+    <div
+      className="photo-items"
+    >
+      <PhotoItem
+        id={1}
+      />
+      <PhotoItem
+        id={2}
+      />
+      <PhotoItem
+        id={3}
+      />
+    </div>
+    <PullRefresher
+      disabled={true}
+      onRefresh={[Function]}
+    />
+  </div>
+</div>
+`;

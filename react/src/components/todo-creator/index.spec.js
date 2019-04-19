@@ -1,66 +1,50 @@
 import React from 'react';
-import TodoCreator from './index.js';
+import TestRenderer from 'react-test-renderer';
 import { shallow } from 'enzyme';
+import TodoCreator from './index';
 
-const setup = () => {
-  // 模拟props
-  const props = {
+describe('TodoCreator Component', () => {
+  const compProps = {
+    //https://jestjs.io/docs/en/mock-functions
     addTodo: jest.fn()
   };
+  const wrapper = shallow(
+    <TodoCreator { ...compProps } />
+  );
 
-  const wrapper = shallow(<TodoCreator {...props} />);
+  //https://jestjs.io/docs/en/setup-teardown
+  afterEach(() => {
+    //https://jestjs.io/docs/en/jest-object#jestclearallmocks
+    jest.clearAllMocks();
+  });
 
-  return {
-    props,
-    wrapper
-  }
-}
+  //https://jestjs.io/docs/en/snapshot-testing
+  it('should render elements correctly', () => {
+    const snapshot = TestRenderer
+      .create(
+        <TodoCreator />
+      )
+      .toJSON();
+    //https://jestjs.io/docs/en/expect
+    expect(snapshot).toMatchSnapshot();
+  });
 
-describe('components', () => {
-  describe('TodoCreator', () => {
-    // it('shuold render create input', () => {
-    //   const { wrapper } = setup();
-
-    //   expect(wrapper.find('input').length).toBe(1);
-    // })
-
-    it('press enter key should call addTodo if text length greater than 0', () => {
-      const { wrapper, props } = setup();
-      const mockEventObj = {
-        key: 'Enter',
+  describe('user presses "Enter" key', () => {
+    it('should do nothing if input is empty', () => {
+      const event = {
         target: {
-          value: 'TEST'
-        }
+          value: null
+        },
+        key: 'Enter'
       };
+      wrapper.find('input').simulate('keydown', event);
+      expect(compProps.addTodo).not.toHaveBeenCalled();
+      expect(event.target.value).toBeNull();
+    });
 
-      wrapper.find('input').simulate('keydown', mockEventObj);
-      expect(props.addTodo).toBeCalled();
-    })
+    //练习：如果用户有输入，当用户按下 Enter 键时调用props.addTodo并清除输入框
+    it('should call "addTodo" and clear input if input is not empty', () => {
 
-    // it('prevent addTodo if input empty', () => {
-    //   const { wrapper, props } = setup();
-    //   const mockEventObj = {
-    //     key: 'Enter',
-    //     target: {
-    //       value: ''
-    //     }
-    //   };
-
-    //   wrapper.find('input').simulate('keydown', mockEventObj);
-    //   expect(props.addTodo).not.toBeCalled();
-    // })
-
-    // it('clear input after addTodo', () => {
-    //   const { wrapper, props } = setup();
-    //   const mockEventObj = {
-    //     key: 'Enter',
-    //     target: {
-    //       value: 'TEST'
-    //     }
-    //   };
-
-    //   wrapper.find('input').simulate('keydown', mockEventObj);
-    //   expect(wrapper.find('input').text()).toBe('');
-    // })
-  })
-})
+    });
+  });
+});

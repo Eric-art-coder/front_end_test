@@ -1,0 +1,14 @@
+{
+  "name": "jest-npm-demo",
+  "version": "1.0.0",
+  "description": "这个是npm包测试的demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "jest"
+  },
+  "author": "huangqin",
+  "license": "ISC",
+  "devDependencies": {
+    "jest": "^23.6.0"
+  }
+}
